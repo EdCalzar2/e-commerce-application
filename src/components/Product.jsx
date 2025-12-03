@@ -5,17 +5,17 @@ export default function Product({ product }) {
   const { dispatch } = useContext(CartContext);
 
   return (
-    <div className="rounded-lg overflow-hidden shadow-md">
+    <div className="rounded-lg overflow-hidden p-4 shadow-md shadow-gray-500/50 hover:shadow-lg transition-all duration-300 ease-in-out hover:scale-101 bg-white/50">
       <img
         src={product.thumbnail}
         alt={product.title}
-        className="w-full h-64 object-cover"
+        className="w-full h-50 object-cover rounded-md"
       />
-      <div className="p-4">
+      <div className="mt-2">
         <h1 className="text-xl font-bold">{product.title}</h1>
         <h4 className="text-lg my-2">₱{product.price}</h4>
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer"
+          className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer text-sm"
           onClick={() => dispatch({ type: "Add", product: product })}
         >
           Add to Cart

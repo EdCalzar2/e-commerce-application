@@ -18,7 +18,7 @@ export default function CartProduct({ product }) {
   };
 
   return (
-    <div className="flex rounded-lg overflow-hidden shadow-md w-125 mb-5 ml-20">
+    <div className="flex rounded-lg overflow-hidden shadow-md w-125 mb-5 ml-20 bg-white">
       <img
         src={product.thumbnail}
         alt=""
@@ -45,7 +45,7 @@ export default function CartProduct({ product }) {
           </button>
         </div>
         <button
-          className="bg-amber-300 rounded-md mb-5 mt-2 px-2 py-1 text-sm"
+          className="bg-amber-300 rounded-md mb-5 mt-2 px-2 py-1 text-sm font-medium"
           onClick={() => dispatch({ type: "Remove", id: product.id })}
         >
           Remove

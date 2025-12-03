@@ -23,8 +23,7 @@ export default function Cart() {
         )}
       </div>
 
-      {/* Right side - Checkout summary */}
-      <div className="w-80 bg-gray-200 p-6 rounded-lg h-fit sticky top-4">
+      <div className="w-80 bg-white p-6 rounded-lg h-fit sticky top-4 mr-12">
         <h3 className="text-xl font-bold mb-4">Order Summary</h3>
         <div className="space-y-2">
           <div className="flex justify-between">
