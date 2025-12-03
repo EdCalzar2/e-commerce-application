@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 17",
+      "description": "",
+      "price": 57990,
+      "thumbnail": "/images/iphone_17.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "title": "iPhone 16 Pro",
+      "description": "",
+      "price": 49990,
+      "thumbnail": "/images/iphone_16.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "title": "Samsung Galaxy S25 Ultra",
+      "description": "",
+      "price": 93990,
+      "thumbnail": "/images/samsung_galaxy_s25_ultra.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "title": "Samsung S24",
+      "description": "",
+      "price": 61990,
+      "thumbnail": "/images/samsung_s24.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "title": "Xiaomi 12S Ultra",
+      "description": "",
+      "price": 52000,
+      "thumbnail": "/images/xiaomi_12s_ultra.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "title": "Xiaomi Note 10 Pro",
+      "description": "",
+      "price": 13999,
+      "thumbnail": "/images/xiaomi_note_10_pro.jpg",
+      "quantity": 1
+    }
+  ]
+}
