@@ -35,7 +35,7 @@ export default function Cart() {
             <h5 className="font-bold">₱{totalPrice.toFixed(2)}</h5>
           </div>
         </div>
-        <button className="bg-yellow-400 hover:bg-yellow-500 w-full mt-4 py-2 rounded-lg font-bold">
+        <button className="bg-yellow-400 hover:bg-yellow-500 w-full mt-4 py-2 rounded-lg font-bold text-white transition-colors duration-200 cursor-pointer">
           Checkout
         </button>
       </div>

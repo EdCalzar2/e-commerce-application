@@ -15,7 +15,7 @@ export default function Product({ product }) {
         <h1 className="text-xl font-bold">{product.title}</h1>
         <h4 className="text-lg my-2">₱{product.price}</h4>
         <button
-          className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer text-sm"
+          className="bg-[#ea701a] hover:bg-[#cd6317] text-white px-4 py-2 rounded cursor-pointer text-sm transition-colors duration-200 ease-in-out"
           onClick={() => dispatch({ type: "Add", product: product })}
         >
           Add to Cart
