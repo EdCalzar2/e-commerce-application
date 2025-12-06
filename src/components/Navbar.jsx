@@ -11,10 +11,13 @@ export default function Navbar() {
       <Link to="/" className="cursor-pointer font-bold text-2xl ml-4">
         Tech-Shop
       </Link>
-      <Link to="/cart" className="flex gap-x-2 mr-4">
-        <ShoppingCart size={25} className="cursor-pointer" />
-        {cart.length}
-      </Link>
+      <div className="flex gap-x-12 items-center font-bold">
+        <Link to="/my_items">My Items</Link>
+        <Link to="/cart" className="flex gap-x-2 mr-4">
+          <ShoppingCart size={25} className="cursor-pointer" />
+          {cart.length}
+        </Link>
+      </div>
     </div>
   );
 }

@@ -16,6 +16,9 @@ export default function CartReducer(state, action) {
         p.id === action.id ? { ...p, quantity: p.quantity - 1 } : p
       );
 
+    case "ClearCart":
+      return [];
+
     default:
       return state;
   }
