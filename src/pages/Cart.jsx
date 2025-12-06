@@ -9,8 +9,6 @@ export default function Cart() {
   const navigate = useNavigate();
   const [orderId] = useState(() => Math.floor(Math.random() * 1000000));
   
-
-  // Calculate totals
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -19,7 +17,6 @@ export default function Cart() {
 
   const handleCheckout = () => {
   if (cart.length > 0) {
-    // Create order object
     const order = {
       id: orderId,
       items: [...cart],
@@ -28,20 +25,16 @@ export default function Cart() {
       date: new Date().toLocaleDateString(),
     };
 
-    // Add order to myItems
     setMyItems({ type: "AddOrder", order });
 
-    // Clear the cart
     dispatch({ type: "ClearCart" });
 
-    // Navigate to MyItems page
     navigate("/my_items");
   }
 };
 
   return (
     <div className="flex gap-4 p-4">
-      {/* Left side - Cart items */}
       <div className="flex-1">
         {cart.length === 0 ? (
           <p className="text-center text-gray-500">Your cart is empty</p>
