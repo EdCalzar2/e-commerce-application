@@ -12,9 +12,14 @@ export default function Navbar() {
         Tech-Shop
       </Link>
       <div className="flex gap-x-12 items-center font-bold">
-        <Link to="/my_items">My Items</Link>
+        <Link to="/my_items" className="hover:scale-103 transition-transform">
+          My Items
+        </Link>
         <Link to="/cart" className="flex gap-x-2 mr-4">
-          <ShoppingCart size={25} className="cursor-pointer" />
+          <ShoppingCart
+            size={25}
+            className="cursor-pointer hover:scale-105 transition-transform"
+          />
           {cart.length}
         </Link>
       </div>

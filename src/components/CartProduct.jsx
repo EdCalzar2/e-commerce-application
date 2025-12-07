@@ -29,7 +29,7 @@ export default function CartProduct({ product }) {
         <h4 className="">₱{product.price}</h4>
         <div className="flex gap-x-2 mt-2">
           <button
-            className="bg-blue-500 rounded-lg px-2"
+            className="bg-blue-500 hover:bg-blue-600 transition-colors rounded-lg px-2 cursor-pointer text-white"
             onClick={() => Decrease(product.id)}
           >
             <b>-</b>
@@ -38,14 +38,14 @@ export default function CartProduct({ product }) {
             <b>{product.quantity}</b>
           </button>
           <button
-            className="bg-blue-500 rounded-lg px-2"
+            className="bg-blue-500 hover:bg-blue-600 transition-colors rounded-lg px-2 cursor-pointer text-white"
             onClick={() => Increase(product.id)}
           >
             <b>+</b>
           </button>
         </div>
         <button
-          className="bg-amber-300 rounded-md mb-5 mt-2 px-2 py-1 text-sm font-medium"
+          className="bg-amber-300 hover:bg-amber-400 transition-colors rounded-md mb-5 mt-2 px-2 py-1 text-sm font-medium cursor-pointer"
           onClick={() => dispatch({ type: "Remove", id: product.id })}
         >
           Remove
